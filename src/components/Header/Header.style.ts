@@ -7,7 +7,7 @@ export const Container = styled.View`
   width: 100%;
   height: 20%;
   padding: 40px 24px 8px 24px;
-  background-color: #0000cc;
+  background-color: #101084;
   justify-content: space-around;
 `
 export const UpperView = styled.View`
@@ -21,7 +21,7 @@ export const UserIconView = styled.View`
   align-items: center;
   justify-content: center;
   border-radius: 99px;
-  background-color: #4040ff;
+  background-color: #ff4040;
 `
 export const OptionsIconView = styled.View`
   flex-direction: row;
@@ -67,7 +67,7 @@ export const OptionView = styled.TouchableOpacity `
 export const OptionIcon = styled.View `
   height: ${width * 0.18}px;
   width: ${width * 0.18}px;
-  background-color: #4040ff;
+  background-color: #101084;
   border-radius: 90px;
   align-items: center;
   justify-content: center;
