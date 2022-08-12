@@ -29,3 +29,29 @@ export const TextWelcome = styled.Text`
   font-size: 16px;
   font-weight: bold;
 `
+export const TotalBalance = styled.View`
+  padding: 24px;
+`
+export const AccountView = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`
+export const Subtitle = styled.Text`
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+`
+
+export const BalanceValue = styled.Text `
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+`
+
+export const BalanceValueNotVisible = styled.View `
+  margin-top:8px;
+  height: 30px;
+  width: 40%;
+  background-color: #808080;
+  border-radius: 2px;
+`

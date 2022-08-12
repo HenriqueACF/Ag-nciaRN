@@ -6,12 +6,18 @@ import {
     UpperView,
     UserIconView,
     OptionsIconView,
-    TextWelcome
+    TextWelcome,
+    TotalBalance,
+    AccountView,
+    Subtitle,
+    BalanceValue,
+    BalanceValueNotVisible
 } from './Header.style'
 
 export function Header(){
     const [showBalance, setShowBalance] = useState(false)
     return(
+        <>
         <Container>
             <UpperView>
                 <UserIconView>
@@ -33,5 +39,19 @@ export function Header(){
                 Olá, Henrique
             </TextWelcome>
         </Container>
+        <TotalBalance>
+            <AccountView>
+                <Subtitle>
+                    Conta
+                </Subtitle>
+                <Ionicons name='chevron-forward-outline' size={25} color="#fff"/>
+            </AccountView>
+
+            {showBalance ?
+                (<BalanceValue>R$ 2345,78</BalanceValue>)
+                : (<BalanceValueNotVisible/>)
+            }
+        </TotalBalance>
+        </>
     )
 }
