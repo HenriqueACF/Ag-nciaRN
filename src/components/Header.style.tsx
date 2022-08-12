@@ -1,4 +1,7 @@
+import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
+
+const { width } = Dimensions.get('window')
 
 export const Container = styled.View`
   width: 100%;
@@ -54,4 +57,22 @@ export const BalanceValueNotVisible = styled.View `
   width: 40%;
   background-color: #808080;
   border-radius: 2px;
+`
+
+export const OptionView = styled.TouchableOpacity `
+  align-items: center;
+  margin-right: 8px;
+`
+
+export const OptionIcon = styled.View `
+  height: ${width * 0.18}px;
+  width: ${width * 0.18}px;
+  background-color: #4040ff;
+  border-radius: 90px;
+  align-items: center;
+  justify-content: center;
+`
+export const OptionText = styled.Text `
+  font-weight: 700;
+  font-size: 14px;
 `

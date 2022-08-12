@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {TouchableOpacity} from "react-native";
+import {ScrollView, TouchableOpacity, View} from "react-native";
 import { Ionicons } from '@expo/vector-icons'
 import {
     Container,
@@ -11,7 +11,10 @@ import {
     AccountView,
     Subtitle,
     BalanceValue,
-    BalanceValueNotVisible
+    BalanceValueNotVisible,
+    OptionView,
+    OptionText,
+    OptionIcon
 } from './Header.style'
 
 export function Header(){
@@ -47,11 +50,67 @@ export function Header(){
                 <Ionicons name='chevron-forward-outline' size={25} color="#fff"/>
             </AccountView>
 
-            {showBalance ?
-                (<BalanceValue>R$ 2345,78</BalanceValue>)
+            {showBalance
+                ? (<BalanceValue>R$ 2345,78</BalanceValue>)
                 : (<BalanceValueNotVisible/>)
             }
         </TotalBalance>
+        <View>
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={{marginLeft:24, paddingRight: 50}}
+            >
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>PIX</OptionText>
+                </OptionView>
+            </ScrollView>
+        </View>
         </>
     )
 }
