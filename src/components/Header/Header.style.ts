@@ -21,7 +21,7 @@ export const UserIconView = styled.View`
   align-items: center;
   justify-content: center;
   border-radius: 99px;
-  background-color: #ff4040;
+  background-color: #c00;
 `
 export const OptionsIconView = styled.View`
   flex-direction: row;

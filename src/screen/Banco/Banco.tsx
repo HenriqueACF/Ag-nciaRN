@@ -5,12 +5,16 @@ import {
     Container,
     MyCardView,
     CardBlogView,
-    CardBlogItem
+    CardBlogItem,
+    CardFunction,
+    CardFunctionRow,
+    Touchable
 } from './Banco.styles'
 import {Header} from "../../components/Header/Header";
 import {MyCard} from '../../components/Card/MyCard'
 import {CardBlog} from "../../components/CardBlog/CardBlog";
 import {Text} from "react-native";
+import {Ionicons} from "@expo/vector-icons";
 
 export function Banco(){
     return(
@@ -49,6 +53,19 @@ export function Banco(){
                     </CardBlogItem>
                 </ScrollView>
             </CardBlogView>
+            <CardFunction>
+                <Ionicons name='card-outline' size={25}/>
+                <CardFunctionRow>
+                    <Text style={styles.subtitle}>Cartão de crédito</Text>
+                    <Ionicons name='chevron-forward' size={15} color={'#101084'}/>
+                </CardFunctionRow>
+                <Text style={styles.textFatura}>Fatura atual</Text>
+                <Text style={styles.textValor}>R$ 1432,75</Text>
+                <Text style={styles.textFatura}>Limite disponível: R$ 4.098,25</Text>
+                <Touchable>
+                    <Text style={styles.textButton}>Parcelar fatura</Text>
+                </Touchable>
+            </CardFunction>
         </Container>
     )
 }
@@ -56,5 +73,21 @@ export function Banco(){
 const styles = StyleSheet.create({
     text:{
         color:'#ccc'
+    },
+    subtitle:{
+        fontSize:16,
+        fontWeight: 'bold'
+    },
+    textFatura:{
+        fontWeight: 'bold',
+        marginTop:16
+    },
+    textValor:{
+        fontSize:20,
+        fontWeight:'bold'
+    },
+    textButton:{
+        fontSize:14,
+        fontWeight: "bold"
     }
 })
