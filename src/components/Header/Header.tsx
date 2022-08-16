@@ -72,7 +72,7 @@ export function Header(){
                     <OptionIcon>
                         <Ionicons name='md-cash' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>Área Pix</OptionText>
+                    <OptionText>Pix</OptionText>
                 </OptionView>
 
                 <OptionView>

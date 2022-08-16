@@ -1,3 +1,4 @@
-# AgenciaRN
+# Protótipo de um App Bancário feito em React Native
 
-expo start
+* Requisitos: Possuir o Expo instalado
+* Para Iniciar execute ->  expo start
