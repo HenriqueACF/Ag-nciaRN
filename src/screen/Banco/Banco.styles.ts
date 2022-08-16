@@ -34,7 +34,7 @@ export const CardFunctionRow = styled.View `
 export const Touchable = styled.TouchableOpacity `
   padding: 8px;
   margin-top: 8px;
-  background-color: #101084;
+  background-color: #204ac8;
   width: 130px;
   border-radius: 16px;
   align-items: center;
