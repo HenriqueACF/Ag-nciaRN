@@ -63,51 +63,51 @@ export function Header(){
             >
                 <OptionView>
                     <OptionIcon>
-                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                        <Ionicons name='md-analytics' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>PIX</OptionText>
+                    <OptionText>Finanças</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='md-cash' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Área Pix</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='ios-card' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Pagar</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='ios-card-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Transferir</OptionText>
                 </OptionView>
 
                 <OptionView>
                     <OptionIcon>
                         <Ionicons name='cash-outline' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>PIX</OptionText>
+                    <OptionText>Depositar</OptionText>
                 </OptionView>
 
                 <OptionView>
                     <OptionIcon>
                         <Ionicons name='cash-outline' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>PIX</OptionText>
+                    <OptionText>Recarga de Celular</OptionText>
                 </OptionView>
 
                 <OptionView>
                     <OptionIcon>
                         <Ionicons name='cash-outline' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>PIX</OptionText>
-                </OptionView>
-
-                <OptionView>
-                    <OptionIcon>
-                        <Ionicons name='cash-outline' size={25} color="#fff"/>
-                    </OptionIcon>
-                    <OptionText>PIX</OptionText>
-                </OptionView>
-
-                <OptionView>
-                    <OptionIcon>
-                        <Ionicons name='cash-outline' size={25} color="#fff"/>
-                    </OptionIcon>
-                    <OptionText>PIX</OptionText>
-                </OptionView>
-
-                <OptionView>
-                    <OptionIcon>
-                        <Ionicons name='cash-outline' size={25} color="#fff"/>
-                    </OptionIcon>
-                    <OptionText>PIX</OptionText>
+                    <OptionText>Cobrar</OptionText>
                 </OptionView>
             </ScrollView>
         </View>

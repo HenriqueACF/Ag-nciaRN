@@ -4,7 +4,10 @@ export const Container = styled.View`
   flex-direction: row;
   padding: 8px;
   background-color: #101084;
-  border-radius: 8px;
+  border-radius: 10px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 `
 export const TextCard = styled.Text `
   margin-left: 8px;

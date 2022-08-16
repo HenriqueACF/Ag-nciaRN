@@ -57,7 +57,7 @@ export function Banco(){
                 <Ionicons name='card-outline' size={25}/>
                 <CardFunctionRow>
                     <Text style={styles.subtitle}>Cartão de crédito</Text>
-                    <Ionicons name='chevron-forward' size={15} color={'#101084'}/>
+                    <Ionicons name='logo-usd' size={15} />
                 </CardFunctionRow>
                 <Text style={styles.textFatura}>Fatura atual</Text>
                 <Text style={styles.textValor}>R$ 1432,75</Text>
