@@ -4,7 +4,6 @@ import {StyleSheet} from "react-native";
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -20,13 +19,13 @@ export default styles = StyleSheet.create({
         width:'80%'
     },
     inputUser:{
-        backgroundColor:'#204ac8',
+        backgroundColor:'#ccc',
         fontSize:19,
         padding:7,
         marginBottom:15
     },
     inputPassword:{
-        backgroundColor:'#204ac8',
+        backgroundColor:'#ccc',
         fontSize:19,
         padding:7,
         marginBottom:15
