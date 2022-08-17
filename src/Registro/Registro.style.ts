@@ -36,8 +36,18 @@ export default styles = StyleSheet.create({
         alignSelf:'center',
         borderRadius:5
     },
+    btnBack:{
+        padding:10,
+        backgroundColor:'red',
+        alignSelf:'center',
+        borderRadius:5
+    },
     btnText:{
         fontWeight:'bold',
         fontSize:16
+    },
+    btnArea:{
+        flexDirection:'row',
+        justifyContent: 'space-around'
     }
 })

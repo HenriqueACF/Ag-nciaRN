@@ -10,12 +10,17 @@ export default styles = StyleSheet.create({
     darkbg:{
         backgroundColor:'#333'
     },
+    logoArea:{
+        alignSelf:'stretch',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     logo:{
-        height:300,
-        width: 300,
-        paddingBottom:20
+        height:500,
+        width: 400
     },
     form:{
+        paddingTop: 70,
         width:'80%'
     },
     inputUser:{
@@ -42,6 +47,7 @@ export default styles = StyleSheet.create({
     },
     btnRegister:{
         paddingTop:20,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color:'#fff'
     }
 })

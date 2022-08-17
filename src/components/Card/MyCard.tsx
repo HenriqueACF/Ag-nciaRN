@@ -9,7 +9,7 @@ import {
 export function MyCard(){
     return(
         <Container>
-            <Ionicons name='card-outline' size={20} color='#000'/>
+            <Ionicons name='card-outline' size={20} color='#fff'/>
             <TextCard>Meus Cartões</TextCard>
         </Container>
     )

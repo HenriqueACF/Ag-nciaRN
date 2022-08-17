@@ -12,7 +12,7 @@ export function Registro({navigation}){
                     style={styles.inputUser}
                 />
                 <TextInput
-                    placeholder="CPF"
+                    placeholder="CPF/CNPJ"
                     keyboardType='numeric'
                     style={styles.inputUser}
                 />
@@ -31,13 +31,20 @@ export function Registro({navigation}){
                     secureTextEntry={true}
                     style={styles.inputPassword}
                 />
-
-                <TouchableOpacity
-                    onPress={()=> navigation.navigate('Login')}
-                    style={styles.btnRegister}
-                >
-                    <Text style={styles.btnText}>Enviar Pedido</Text>
-                </TouchableOpacity>
+                <View style={styles.btnArea}>
+                    <TouchableOpacity
+                        onPress={()=> navigation.navigate('Login')}
+                        style={styles.btnBack}
+                    >
+                        <Text style={styles.btnText}>Cancelar</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={()=> navigation.navigate('Login')}
+                        style={styles.btnRegister}
+                    >
+                        <Text style={styles.btnText}>Cadastrar</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </KeyboardAvoidingView>
     )

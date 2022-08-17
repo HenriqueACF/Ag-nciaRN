@@ -5,12 +5,12 @@ export const Container = styled.View`
 `
 
 export const MyCardView = styled.View `
-  padding:24px;
+  padding:20px;
 `
 
 export const CardBlogView = styled.View `
   flex-direction: row;
-  margin-top: 24px;
+  margin-top: 20px;
 `
 
 export const CardBlogItem = styled.View `
@@ -18,10 +18,8 @@ export const CardBlogItem = styled.View `
 `
 
 export const CardFunction = styled.View `
-  margin: 24px 8px;
-  padding: 24px;
-  border: 1px solid red;
-  border-radius: 10px;
+  margin: 15px 8px;
+  padding: 10px;
 `
 
 export const CardFunctionRow = styled.View `

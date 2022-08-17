@@ -47,7 +47,7 @@ export function Header(){
                 <Subtitle>
                     Conta
                 </Subtitle>
-                <Ionicons name='chevron-forward-outline' size={25} color="#fff"/>
+                <Ionicons name='chevron-forward-outline' size={25} />
             </AccountView>
 
             {showBalance
@@ -65,7 +65,7 @@ export function Header(){
                     <OptionIcon>
                         <Ionicons name='md-analytics' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>Finanças</OptionText>
+                    <OptionText>Pagar</OptionText>
                 </OptionView>
 
                 <OptionView>
@@ -79,7 +79,7 @@ export function Header(){
                     <OptionIcon>
                         <Ionicons name='ios-card' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>Pagar</OptionText>
+                    <OptionText>Receber</OptionText>
                 </OptionView>
 
                 <OptionView>
@@ -100,14 +100,34 @@ export function Header(){
                     <OptionIcon>
                         <Ionicons name='cash-outline' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>Recarga de Celular</OptionText>
+                    <OptionText>R. Celular</OptionText>
                 </OptionView>
 
                 <OptionView>
                     <OptionIcon>
                         <Ionicons name='cash-outline' size={25} color="#fff"/>
                     </OptionIcon>
-                    <OptionText>Cobrar</OptionText>
+                    <OptionText>Saque</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Finanças</OptionText>
+                </OptionView>
+
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Finanças</OptionText>
+                </OptionView>
+                <OptionView>
+                    <OptionIcon>
+                        <Ionicons name='cash-outline' size={25} color="#fff"/>
+                    </OptionIcon>
+                    <OptionText>Finanças</OptionText>
                 </OptionView>
             </ScrollView>
         </View>

@@ -23,6 +23,19 @@ export function Banco(){
             <MyCardView>
                 <MyCard/>
             </MyCardView>
+            <CardFunction>
+                <Ionicons name='card-outline' size={25}/>
+                <CardFunctionRow>
+                    <Text style={styles.subtitle}>Cartão de crédito</Text>
+                    <Ionicons name='logo-usd' size={15} />
+                </CardFunctionRow>
+                <Text style={styles.textFatura}>Fatura atual</Text>
+                <Text style={styles.textValor}>R$ 1432,75</Text>
+                <Text style={styles.textFatura}>Limite disponível: R$ 4.098,25</Text>
+                <Touchable>
+                    <Text style={styles.textButton}>Parcelar fatura</Text>
+                </Touchable>
+            </CardFunction>
             <CardBlogView>
                 <ScrollView
                     horizontal
@@ -52,19 +65,6 @@ export function Banco(){
                     </CardBlogItem>
                 </ScrollView>
             </CardBlogView>
-            <CardFunction>
-                <Ionicons name='card-outline' size={25}/>
-                <CardFunctionRow>
-                    <Text style={styles.subtitle}>Cartão de crédito</Text>
-                    <Ionicons name='logo-usd' size={15} />
-                </CardFunctionRow>
-                <Text style={styles.textFatura}>Fatura atual</Text>
-                <Text style={styles.textValor}>R$ 1432,75</Text>
-                <Text style={styles.textFatura}>Limite disponível: R$ 4.098,25</Text>
-                <Touchable>
-                    <Text style={styles.textButton}>Parcelar fatura</Text>
-                </Touchable>
-            </CardFunction>
         </Container>
     )
 }
@@ -87,6 +87,7 @@ const styles = StyleSheet.create({
     },
     textButton:{
         fontSize:14,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: 'white'
     }
 })

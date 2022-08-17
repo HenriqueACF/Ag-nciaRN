@@ -5,7 +5,7 @@ export const Container = styled.View`
   padding: 8px;
   background-color: #204ac8;
   border-radius: 10px;
-  height: 50px;
+  height: 45px;
   justify-content: center;
   align-items: center;
 `
@@ -13,4 +13,5 @@ export const TextCard = styled.Text `
   margin-left: 8px;
   font-weight: bold;
   font-size: 14px;
+  color: white;
 `
