@@ -1,5 +1,5 @@
 import React from 'react'
-import {ScrollView, StyleSheet} from "react-native";
+import { ScrollView, StyleSheet} from "react-native";
 
 import {
     Container,
@@ -23,7 +23,6 @@ export function Banco(){
             <MyCardView>
                 <MyCard/>
             </MyCardView>
-
             <CardBlogView>
                 <ScrollView
                     horizontal

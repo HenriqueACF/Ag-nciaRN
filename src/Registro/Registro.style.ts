@@ -10,10 +10,10 @@ export default styles = StyleSheet.create({
     darkbg:{
         backgroundColor:'#333'
     },
-    logo:{
-        height:300,
-        width: 300,
-        paddingBottom:20
+    text:{
+        fontWeight:'bold',
+        fontSize:18,
+        paddingBottom: 20
     },
     form:{
         width:'80%'
@@ -30,18 +30,14 @@ export default styles = StyleSheet.create({
         padding:7,
         marginBottom:15
     },
-    btnLogin:{
-        padding:12,
+    btnRegister:{
+        padding:10,
         backgroundColor:'#204ac8',
         alignSelf:'center',
         borderRadius:5
     },
     btnText:{
         fontWeight:'bold',
-        fontSize:22
-    },
-    btnRegister:{
-        paddingTop:20,
-        alignSelf: 'center'
+        fontSize:16
     }
 })

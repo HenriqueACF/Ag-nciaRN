@@ -27,6 +27,12 @@ export function Login({navigation}){
                 >
                     <Text style={styles.btnText}>Entrar</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={()=> navigation.navigate('Registro')}
+                    style={styles.btnRegister}
+                >
+                    <Text>Solicitar uma conta</Text>
+                </TouchableOpacity>
             </View>
         </KeyboardAvoidingView>
     )
