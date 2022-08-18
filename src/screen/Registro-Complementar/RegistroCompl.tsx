@@ -60,10 +60,10 @@ export function RegistroCompl({navigation}){
                             <Text style={styles.btnText}>Cancelar</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
-                            onPress={()=> navigation.navigate('Login')}
+                            onPress={()=> navigation.navigate('CapturaDoc')}
                             style={styles.btnRegister}
                         >
-                            <Text style={styles.btnText}>Enviar</Text>
+                            <Text style={styles.btnText}>Prosseguir</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
