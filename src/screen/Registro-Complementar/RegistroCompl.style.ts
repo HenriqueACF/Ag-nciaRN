@@ -11,12 +11,16 @@ export default styles = StyleSheet.create({
         backgroundColor:'#333'
     },
     text:{
+        paddingTop: 200,
         fontWeight:'bold',
         fontSize:18,
-        paddingBottom: 20
+        alignSelf:'center'
     },
     form:{
-        width:'80%'
+        paddingTop:'25%',
+        margin: 10,
+        width:'95%',
+        justifyContent: 'center',
     },
     inputUser:{
         backgroundColor:'#ccc',

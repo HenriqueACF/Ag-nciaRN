@@ -10,24 +10,17 @@ export default styles = StyleSheet.create({
     darkbg:{
         backgroundColor:'#333'
     },
-    logoArea:{
-        alignSelf:'stretch',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor:'#333',
-        borderRadius: 20,
-        width: '90%',
-        height:'50%',
-        margin:20
-    },
-    logo:{
-
+    text:{
+        paddingTop: 200,
+        fontWeight:'bold',
+        fontSize:18,
+        alignSelf:'center'
     },
     form:{
-        paddingTop: 40,
+        paddingTop:'25%',
         margin: 10,
         width:'95%',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     inputUser:{
         backgroundColor:'#ccc',
@@ -41,23 +34,24 @@ export default styles = StyleSheet.create({
         padding:7,
         marginBottom:15
     },
-    btnLogin:{
-        padding:12,
-        backgroundColor: '#ff4700',
+    btnRegister:{
+        padding:10,
+        backgroundColor:'#204ac8',
+        alignSelf:'center',
+        borderRadius:5
+    },
+    btnBack:{
+        padding:10,
+        backgroundColor:'red',
         alignSelf:'center',
         borderRadius:5
     },
     btnText:{
         fontWeight:'bold',
-        fontSize:22
+        fontSize:16
     },
-    btnRegister:{
-        paddingTop:20,
-        alignSelf: 'center',
-        color:'#000'
-    },
-    textRegister:{
-        color: '#000',
-        fontWeight: 'bold'
+    btnArea:{
+        flexDirection:'row',
+        justifyContent: 'space-around'
     }
 })
