@@ -13,11 +13,11 @@ export function CapturaDocVerso({navigation}){
     return(
         <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
             <ImageBackground
-                source={require('../../../assets/bg-layout2.png')}
+                source={require('../../../assets/bg-layout.png')}
                 style={{width: '100%', height: '100%'}} >
                 <Text style={styles.text}>Captura do Documento</Text>
                 <View style={styles.form}>
-                    <Text style={styles.text}>Tire uma foto do verso do documento</Text>
+                    <Text style={styles.textUp}>Tire uma foto do verso do documento</Text>
                     <Image
                         source={require('../../../assets/captura-traseira.png')}
                         style={{width: '100%', height: 200}}
@@ -35,7 +35,7 @@ export function CapturaDocVerso({navigation}){
                             onPress={()=> navigation.navigate('RegistroFinalizado')}
                             style={styles.btnRegister}
                         >
-                            <Text style={styles.btnText}>Finalizar</Text>
+                            <Text style={styles.btnText}>Finalizado</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

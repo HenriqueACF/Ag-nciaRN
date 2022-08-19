@@ -14,7 +14,7 @@ export default styles = StyleSheet.create({
         alignSelf:'stretch',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor:'#333',
+        backgroundColor:'#fff',
         borderRadius: 20,
         width: '90%',
         height:'50%',
@@ -24,32 +24,40 @@ export default styles = StyleSheet.create({
 
     },
     form:{
-        paddingTop: 40,
+        paddingTop: 85,
         margin: 10,
         width:'95%',
         justifyContent: 'center'
     },
     inputUser:{
-        backgroundColor:'#ccc',
+        backgroundColor:'#fff',
         fontSize:19,
         padding:7,
-        marginBottom:15
+        marginBottom:15,
+        width: '80%',
+        borderRadius:20,
+        justifyContent:'center',
+        height: 50
     },
     inputPassword:{
-        backgroundColor:'#ccc',
+        backgroundColor:'#fff',
         fontSize:19,
         padding:7,
-        marginBottom:15
+        marginBottom:35,
+        width: '80%',
+        borderRadius:20,
+        height: 50
     },
     btnLogin:{
         padding:12,
-        backgroundColor: '#ff4700',
+        backgroundColor: '#ff8c00',
         alignSelf:'center',
         borderRadius:5
     },
     btnText:{
         fontWeight:'bold',
-        fontSize:22
+        fontSize:22,
+        color:'white'
     },
     btnRegister:{
         paddingTop:20,

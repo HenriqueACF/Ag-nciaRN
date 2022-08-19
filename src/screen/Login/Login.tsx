@@ -10,6 +10,7 @@ import {
     ImageBackground
 } from "react-native";
 import styles from './Login.styles'
+import {Ionicons} from "@expo/vector-icons";
 
 export function Login({navigation}){
     return(
@@ -25,17 +26,22 @@ export function Login({navigation}){
         </View>
 
         <View style={styles.form}>
+            <View style={{flexDirection:'row', justifyContent:'space-around'}}>
             <TextInput
                 placeholder="CPF/CNPJ"
                 keyboardType='numeric'
                 style={styles.inputUser}
             />
+            <Ionicons name='person' size={30} color='white'/>
+            </View>
+            <View style={{flexDirection:'row', justifyContent:'space-around'}}>
             <TextInput
                 placeholder="Senha"
                 secureTextEntry={true}
                 style={styles.inputPassword}
             />
-
+            <Ionicons name='key' size={30} color='white'/>
+            </View>
             <TouchableOpacity
                 onPress={()=> navigation.navigate('Banco')}
                 style={styles.btnLogin}
@@ -46,11 +52,10 @@ export function Login({navigation}){
                 onPress={()=> navigation.navigate('Registro')}
                 style={styles.btnRegister}
             >
-                <Text style={{color:'black'}}>Solicitar conta</Text>
+                <Text style={{color:'white'}}>Solicitar conta</Text>
             </TouchableOpacity>
         </View>
         </ImageBackground>
     </KeyboardAvoidingView>
-
     )
 }

@@ -11,29 +11,36 @@ export default styles = StyleSheet.create({
         backgroundColor:'#333'
     },
     text:{
-        paddingTop: 100,
+        paddingTop: 150,
+        paddingBottom: 100,
         fontWeight:'bold',
         fontSize:18,
-        alignSelf:'center'
+        alignSelf:'center',
+        color:'#fff'
     },
     textUp:{
         paddingTop:10,
         fontSize:18,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color:'#ff8c00'
     },
     subtitle:{
         paddingTop:20,
         fontSize:14,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color:'#ff8c00'
     },
     form:{
         paddingTop:'10%',
         margin: 10,
         width:'95%',
         justifyContent: 'center',
+        alignSelf:'center',
+        backgroundColor:'#fff',
+        borderRadius:20
     },
     inputUser:{
-        backgroundColor:'#ccc',
+        backgroundColor:'#FFF',
         fontSize:19,
         padding:7,
         marginBottom:15
@@ -46,7 +53,7 @@ export default styles = StyleSheet.create({
     },
     btnRegister:{
         padding:10,
-        backgroundColor:'#204ac8',
+        backgroundColor:'#ff8c00',
         alignSelf:'center',
         borderRadius:5
     },
@@ -58,11 +65,13 @@ export default styles = StyleSheet.create({
     },
     btnText:{
         fontWeight:'bold',
-        fontSize:16
+        fontSize:16,
+        color:'white'
     },
     btnArea:{
         flexDirection:'row',
         justifyContent: 'space-around',
-        paddingTop:40
+        paddingTop:40,
+        paddingBottom:40
     }
 })

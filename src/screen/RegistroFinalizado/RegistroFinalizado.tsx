@@ -14,11 +14,12 @@ export function RegistroFinalizado({navigation}){
     return(
         <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
             <ImageBackground
-                source={require('../../../assets/bg-layout2.png')}
+                source={require('../../../assets/bg-layout.png')}
                 style={{width: '100%', height: '100%'}} >
-                <Text style={styles.text}>Estamos analisando seus dados (Isso poderá demorar alguns minutos) </Text>
+                <Text style={styles.text}>Estamos analisando seus dados</Text>
+                <Text style={styles.subtitle2}> (Isso poderá demorar alguns minutos)</Text>
                 <View style={styles.form}>
-                    <Ionicons name='mail' size={150} style={styles.mail}/>
+                    <Ionicons name='mail' size={150} style={styles.mail} color='#ff8c00'/>
                     <Text style={styles.subText}> Aguarde a confirmação por email. </Text>
                     <View style={styles.btnArea}>
                         <TouchableOpacity

@@ -13,7 +13,7 @@ export function RegistroCompl({navigation}){
     return(
         <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
             <ImageBackground
-                source={require('../../../assets/bg-layout2.png')}
+                source={require('../../../assets/bg-layout.png')}
                 style={{width: '100%', height: '100%'}} >
                 <Text style={styles.text}>Dados Complementares</Text>
                 <View style={styles.form}>
