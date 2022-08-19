@@ -31,22 +31,22 @@ export default styles = StyleSheet.create({
     },
     inputUser:{
         backgroundColor:'#fff',
-        fontSize:19,
+        fontSize:15,
         padding:7,
         marginBottom:15,
         width: '80%',
-        borderRadius:20,
+        borderRadius:5,
         justifyContent:'center',
-        height: 50
+        height: 40
     },
     inputPassword:{
         backgroundColor:'#fff',
-        fontSize:19,
+        fontSize:15,
         padding:7,
         marginBottom:35,
         width: '80%',
-        borderRadius:20,
-        height: 50
+        borderRadius:5,
+        height: 40
     },
     btnLogin:{
         padding:12,

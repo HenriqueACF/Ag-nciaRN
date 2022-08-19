@@ -71,7 +71,7 @@ export function Banco(){
 
 const styles = StyleSheet.create({
     text:{
-        color:'#ccc'
+        color:'#FFF'
     },
     subtitle:{
         fontSize:16,

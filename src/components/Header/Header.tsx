@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {ScrollView, TouchableOpacity, View} from "react-native";
+import {ImageBackground, ScrollView, TouchableOpacity, View} from "react-native";
 import { Ionicons } from '@expo/vector-icons'
 import {
     Container,
@@ -22,6 +22,9 @@ export function Header(){
     return(
         <>
         <Container>
+            <ImageBackground
+                source={require('../../../assets/top-dashboard.png')}
+                style={{width: '100%', height: '100%'}} >
             <UpperView>
                 <UserIconView>
                     <Ionicons name="person-outline" size={20} color="#fff"/>
@@ -41,6 +44,7 @@ export function Header(){
             <TextWelcome>
                 Olá, Henrique
             </TextWelcome>
+            </ImageBackground>
         </Container>
         <TotalBalance>
             <AccountView>

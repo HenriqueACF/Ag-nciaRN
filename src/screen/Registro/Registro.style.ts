@@ -25,16 +25,16 @@ export default styles = StyleSheet.create({
     },
     inputUser:{
         backgroundColor:'#fff',
-        fontSize:19,
+        fontSize:15,
         padding:7,
         marginBottom:15,
-        borderRadius:20,
-        height: 50
+        borderRadius:5,
+        height: 40
 
     },
     inputPassword:{
         backgroundColor:'#fff',
-        fontSize:19,
+        fontSize:15,
         padding:7,
         marginBottom:15,
         borderRadius:20,

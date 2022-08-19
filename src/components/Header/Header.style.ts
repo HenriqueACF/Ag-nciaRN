@@ -5,12 +5,11 @@ const { width } = Dimensions.get('window')
 
 export const Container = styled.View`
   width: 100%;
-  height: 20%;
-  padding: 40px 24px 8px 24px;
-  background-color: #204ac8;
+  height: 25%;
   justify-content: space-around;
 `
 export const UpperView = styled.View`
+  padding: 17% 5% 0 5%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +20,7 @@ export const UserIconView = styled.View`
   align-items: center;
   justify-content: center;
   border-radius: 99px;
-  background-color: #c00;
+  background-color: #ff8c00;
 `
 export const OptionsIconView = styled.View`
   flex-direction: row;
@@ -31,6 +30,7 @@ export const TextWelcome = styled.Text`
   color: #fff;
   font-size: 16px;
   font-weight: bold;
+  padding: 10px;
 `
 export const TotalBalance = styled.View`
   padding: 24px;
@@ -55,7 +55,7 @@ export const BalanceValueNotVisible = styled.View `
   margin-top:8px;
   height: 30px;
   width: 40%;
-  background-color: #808080;
+  background-color: #ff8c00;
   border-radius: 2px;
 `
 
@@ -67,7 +67,7 @@ export const OptionView = styled.TouchableOpacity `
 export const OptionIcon = styled.View `
   height: ${width * 0.18}px;
   width: ${width * 0.18}px;
-  background-color: #204ac8;
+  background-color: #ff8c00;
   border-radius: 90px;
   align-items: center;
   justify-content: center;
