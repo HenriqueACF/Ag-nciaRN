@@ -8,6 +8,10 @@ import {RegistroCompl} from './src/screen/Registro-Complementar/RegistroCompl'
 import {CapturaDoc} from "./src/screen/CapturaDoc/CapturaDoc"
 import {CapturaDocVerso} from './src/screen/CapturaVerso/CapturaDocVerso'
 import {RegistroFinalizado} from './src/screen/RegistroFinalizado/RegistroFinalizado'
+import {TipoPagamento} from './src/screen/Pagamento/TipoPagamento'
+import {PagamentoQrCode} from './src/screen/Pagamento/QrCode/PagamentoQrCode'
+import {PagamentoBoleto} from './src/screen/Pagamento/Boleto/PagamentoBoleto'
+import {PagamentoCodigo} from "./src/screen/Pagamento/Codigo/PagamentoCodigo";
 
 const Stack = createNativeStackNavigator();
 
@@ -63,6 +67,38 @@ export default function App() {
             <Stack.Screen
                 name="RegistroFinalizado"
                 component={RegistroFinalizado}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="TipoPagamento"
+                component={TipoPagamento}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="PagamentoQrCode"
+                component={PagamentoQrCode}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="PagamentoBoleto"
+                component={PagamentoBoleto}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="PagamentoCodigo"
+                component={PagamentoCodigo}
                 options={{
                     headerShown: false
                 }}

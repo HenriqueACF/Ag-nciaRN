@@ -16,8 +16,10 @@ import {
     OptionText,
     OptionIcon
 } from './Header.style'
+import {useNavigation} from "@react-navigation/native";
 
 export function Header(){
+    const navigation = useNavigation()
     const [showBalance, setShowBalance] = useState(false)
     return(
         <>
@@ -65,7 +67,9 @@ export function Header(){
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{marginLeft:24, paddingRight: 50}}
             >
-                <OptionView>
+                <OptionView
+                    onPress={()=> navigation.navigate('TipoPagamento')}
+                >
                     <OptionIcon>
                         <Ionicons name='md-analytics' size={25} color="#fff"/>
                     </OptionIcon>
