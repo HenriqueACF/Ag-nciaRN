@@ -20,6 +20,7 @@ import {CobrarPix} from "./src/screen/Pix/Receber/Cobrar/CobrarPix";
 import {DepositarPix} from "./src/screen/Pix/Receber/Depositar/DepositarPix";
 import {Receber} from "./src/screen/Receber/Receber";
 import {TipoTransferencia} from "./src/screen/Transferir/TipoTransferencia";
+import {Perfil} from "./src/screen/Perfil/Perfil";
 
 const Stack = createNativeStackNavigator();
 
@@ -171,6 +172,14 @@ export default function App() {
             <Stack.Screen
                 name="TipoTransferencia"
                 component={TipoTransferencia}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="Perfil"
+                component={Perfil}
                 options={{
                     headerShown: false
                 }}

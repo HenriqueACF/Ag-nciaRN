@@ -14,7 +14,7 @@ export const UpperView = styled.View`
   align-items: center;
   justify-content: space-between;
 `
-export const UserIconView = styled.View`
+export const UserIconView = styled.TouchableOpacity`
   height: 35px;
   width: 40px;
   align-items: center;

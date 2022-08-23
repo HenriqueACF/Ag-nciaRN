@@ -28,7 +28,9 @@ export function Header(){
                 source={require('../../../assets/top-dashboard.png')}
                 style={{width: '100%', height: '100%'}} >
             <UpperView>
-                <UserIconView>
+                <UserIconView
+                    onPress={()=> navigation.navigate('Perfil')}
+                >
                     <Ionicons name="person-outline" size={20} color="#fff"/>
                 </UserIconView>
 
