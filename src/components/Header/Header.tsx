@@ -94,7 +94,9 @@ export function Header(){
                     <OptionText>Receber</OptionText>
                 </OptionView>
 
-                <OptionView>
+                <OptionView
+                    onPress={()=> navigation.navigate('TipoTransferencia')}
+                >
                     <OptionIcon>
                         <Ionicons name='ios-card-outline' size={25} color="#fff"/>
                     </OptionIcon>
