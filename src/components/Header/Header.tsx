@@ -76,7 +76,9 @@ export function Header(){
                     <OptionText>Pagar</OptionText>
                 </OptionView>
 
-                <OptionView>
+                <OptionView
+                    onPress={()=> navigation.navigate('Pix')}
+                >
                     <OptionIcon>
                         <Ionicons name='md-cash' size={25} color="#fff"/>
                     </OptionIcon>

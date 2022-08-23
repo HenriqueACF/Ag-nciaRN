@@ -68,7 +68,7 @@ export const OptionIcon = styled.View `
   height: ${width * 0.18}px;
   width: ${width * 0.18}px;
   background-color: #ff8c00;
-  border-radius: 90px;
+  border-radius: 20px;
   align-items: center;
   justify-content: center;
 `

@@ -12,6 +12,12 @@ import {TipoPagamento} from './src/screen/Pagamento/TipoPagamento'
 import {PagamentoQrCode} from './src/screen/Pagamento/QrCode/PagamentoQrCode'
 import {PagamentoBoleto} from './src/screen/Pagamento/Boleto/PagamentoBoleto'
 import {PagamentoCodigo} from "./src/screen/Pagamento/Codigo/PagamentoCodigo";
+import {Pix} from "./src/screen/Pix/Pix";
+import {TransChave} from "./src/screen/Pix/Enviar/Chave/TransChave";
+import {TransQrcode} from "./src/screen/Pix/Enviar/QrCode/TransQrcode";
+import {TransPix} from "./src/screen/Pix/Enviar/Transferir/TransPix";
+import {CobrarPix} from "./src/screen/Pix/Receber/Cobrar/CobrarPix";
+import {DepositarPix} from "./src/screen/Pix/Receber/Depositar/DepositarPix";
 
 const Stack = createNativeStackNavigator();
 
@@ -99,6 +105,54 @@ export default function App() {
             <Stack.Screen
                 name="PagamentoCodigo"
                 component={PagamentoCodigo}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="Pix"
+                component={Pix}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="TransChave"
+                component={TransChave}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="TransQrcode"
+                component={TransQrcode}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="TransPix"
+                component={TransPix}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="CobrarPix"
+                component={CobrarPix}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="DepositarPix"
+                component={DepositarPix}
                 options={{
                     headerShown: false
                 }}
