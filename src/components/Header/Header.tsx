@@ -53,7 +53,7 @@ export function Header(){
                 <Subtitle>
                     Conta
                 </Subtitle>
-                <Ionicons name='chevron-forward-outline' size={25} />
+                <Ionicons name='chevron-forward-outline' size={25} color={'#ff9b36'}/>
             </AccountView>
 
             {showBalance
@@ -85,7 +85,9 @@ export function Header(){
                     <OptionText>Pix</OptionText>
                 </OptionView>
 
-                <OptionView>
+                <OptionView
+                    onPress={()=> navigation.navigate('Receber')}
+                >
                     <OptionIcon>
                         <Ionicons name='ios-card' size={25} color="#fff"/>
                     </OptionIcon>

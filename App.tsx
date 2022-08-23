@@ -18,6 +18,7 @@ import {TransQrcode} from "./src/screen/Pix/Enviar/QrCode/TransQrcode";
 import {TransPix} from "./src/screen/Pix/Enviar/Transferir/TransPix";
 import {CobrarPix} from "./src/screen/Pix/Receber/Cobrar/CobrarPix";
 import {DepositarPix} from "./src/screen/Pix/Receber/Depositar/DepositarPix";
+import {Receber} from "./src/screen/Receber/Receber";
 
 const Stack = createNativeStackNavigator();
 
@@ -153,6 +154,14 @@ export default function App() {
             <Stack.Screen
                 name="DepositarPix"
                 component={DepositarPix}
+                options={{
+                    headerShown: false
+                }}
+            />
+
+            <Stack.Screen
+                name="Receber"
+                component={Receber}
                 options={{
                     headerShown: false
                 }}
