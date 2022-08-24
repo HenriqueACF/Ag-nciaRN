@@ -1,19 +1,41 @@
-import React from "react";
+import React, {useState} from "react";
 import {
-    Button,
     KeyboardAvoidingView,
     TextInput,
     View,
-    Image,
     TouchableOpacity,
     Text,
-    ImageBackground
+    ImageBackground,
+    Alert
 } from "react-native";
 import styles from './Login.styles'
 import {Ionicons} from "@expo/vector-icons";
 import * as Animatable from 'react-native-animatable'
+import UserService from "../../Services/UserService";
 
 export function Login({navigation}){
+
+    const [user, setUser] = useState(null)
+    const [password, setPassword] = useState(null)
+
+    const entrar = () => {
+        let data = {
+            username: user,
+            password: password
+        }
+
+        UserService.login(data)
+            .then((response) => {
+                navigation.reset({
+                    index: 0,
+                    routes: [{name: "Principal"}]
+                })
+            })
+            .catch((error) => {
+                Alert.alert("Usuário não existe")
+            })
+    }
+
     return(
     <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
         <ImageBackground
