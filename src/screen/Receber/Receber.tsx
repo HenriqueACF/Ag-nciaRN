@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Receber.styles'
 import {ImageBackground, KeyboardAvoidingView, Text, TextInput, View} from "react-native";
 import {Ionicons} from "@expo/vector-icons";
+import * as Animatable from 'react-native-animatable'
 
 export function Receber({navigation}){
     return(
@@ -9,7 +10,7 @@ export function Receber({navigation}){
             <ImageBackground
                 source={require('../../../assets/bg-layout.png')}
                 style={{width: '100%', height: '100%'}} >
-                <View style={styles.area}>
+                <Animatable.View animation='bounceInLeft' style={styles.area}>
                     <View>
                         <Text style={styles.txt}>Qual é o valor que você quer receber?</Text>
                         <TextInput placeholder={'insira aqui'} style={styles.input}/>
@@ -19,7 +20,7 @@ export function Receber({navigation}){
                             <Ionicons  name='arrow-forward' size={40} color='#FFF'/>
                         </View>
                     </View>
-                </View>
+                </Animatable.View>
             </ImageBackground>
         </KeyboardAvoidingView>
     )

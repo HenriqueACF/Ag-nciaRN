@@ -3,6 +3,7 @@ import styles from './Pix.style'
 import {ImageBackground, KeyboardAvoidingView, View, Text, TouchableOpacity} from "react-native";
 import {OptionIcon, OptionText, OptionView} from "../../components/Header/Header.style";
 import {Ionicons} from "@expo/vector-icons";
+import * as Animatable from 'react-native-animatable'
 
 export function Pix({navigation}){
     return(
@@ -10,6 +11,7 @@ export function Pix({navigation}){
             <ImageBackground
                 source={require('../../../assets/bg-layout.png')}
                 style={{width: '100%', height: '100%'}} >
+                <Animatable.View animation='bounceInLeft'>
                     <Text style={styles.txt}>Área Pix</Text>
                     <Text style={styles.firstText}>Enviar Pix</Text>
                     <View style={{alignItems:'center'}}>
@@ -73,6 +75,7 @@ export function Pix({navigation}){
                             </TouchableOpacity>
                         </View>
                     </View>
+                </Animatable.View>
             </ImageBackground>
         </KeyboardAvoidingView>
     )

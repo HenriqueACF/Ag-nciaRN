@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, StyleSheet} from "react-native";
+import {ScrollView, StyleSheet, View} from "react-native";
 
 import {
     Container,
@@ -32,7 +32,7 @@ export function Banco(){
                 <Text style={styles.textFatura}>Fatura atual</Text>
                 <Text style={styles.textValor}>R$ 1432,75</Text>
                 <Text style={styles.textFatura}>Limite disponível: R$ 4.098,25</Text>
-                <Touchable>
+                <Touchable style={{borderRadius:10}}>
                     <Text style={styles.textButton}>Parcelar fatura</Text>
                 </Touchable>
             </CardFunction>

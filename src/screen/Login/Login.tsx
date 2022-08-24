@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import styles from './Login.styles'
 import {Ionicons} from "@expo/vector-icons";
+import * as Animatable from 'react-native-animatable'
 
 export function Login({navigation}){
     return(
@@ -19,13 +20,14 @@ export function Login({navigation}){
             source={require('../../../assets/bg-layout.png')}
             style={{width: '100%', height: '100%'}} >
         <View style={styles.logoArea}>
-            <Image
+            <Animatable.Image
+                animation='flipInY'
                 source={require('../../../assets/octus.png')}
                 style={{width: '200%', height: 300}}
                 resizeMode={'center'}/>
         </View>
 
-        <View style={styles.form}>
+        <Animatable.View animation='fadeInUp' style={styles.form}>
             <View style={{flexDirection:'row', justifyContent:'space-around'}}>
             <TextInput
                 placeholder="CPF/CNPJ"
@@ -54,7 +56,7 @@ export function Login({navigation}){
             >
                 <Text style={{color:'white'}}>Solicitar conta</Text>
             </TouchableOpacity>
-        </View>
+        </Animatable.View>
         </ImageBackground>
     </KeyboardAvoidingView>
     )
