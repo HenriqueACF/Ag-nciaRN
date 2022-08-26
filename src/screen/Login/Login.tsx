@@ -6,38 +6,39 @@ import {
     TouchableOpacity,
     Text,
     ImageBackground,
-    Alert
+    Alert,
+    Platform
 } from "react-native";
 import styles from './Login.styles'
 import {Ionicons} from "@expo/vector-icons";
 import * as Animatable from 'react-native-animatable'
-import UserService from "../../Services/UserService";
+//import UserService from "../../Services/UserService";
 
 export function Login({navigation}){
 
-    const [user, setUser] = useState(null)
-    const [password, setPassword] = useState(null)
-
-    const entrar = () => {
-        let data = {
-            username: user,
-            password: password
-        }
-
-        UserService.login(data)
-            .then((response) => {
-                navigation.reset({
-                    index: 0,
-                    routes: [{name: "Principal"}]
-                })
-            })
-            .catch((error) => {
-                Alert.alert("Usuário não existe")
-            })
-    }
+    // const [user, setUser] = useState(null)
+    // const [password, setPassword] = useState(null)
+    //
+    // const entrar = () => {
+    //     let data = {
+    //         username: user,
+    //         password: password
+    //     }
+    //
+    //     UserService.login(data)
+    //         .then((response) => {
+    //             navigation.reset({
+    //                 index: 0,
+    //                 routes: [{name: "Dashboard"}]
+    //             })
+    //         })
+    //         .catch((error) => {
+    //             Alert.alert("Usuário não existe")
+    //         })
+    // }
 
     return(
-    <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
+    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS=='ios'?'padding':null} >
         <ImageBackground
             source={require('../../../assets/bg-layout.png')}
             style={{width: '100%', height: '100%'}} >

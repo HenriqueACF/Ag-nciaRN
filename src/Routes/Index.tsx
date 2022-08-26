@@ -1,6 +1,6 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import {Login} from '../screen/Login/Login'
-import {Banco} from '../screen/Banco/Banco'
+import {Dashboard} from '../screen/Dashboard/Dashboard'
 import {Registro} from '../screen/Registro/Registro'
 import {RegistroCompl} from '../screen/Registro-Complementar/RegistroCompl'
 import {CapturaDoc} from '../screen/CapturaDoc/CapturaDoc'
@@ -34,7 +34,7 @@ export default function Routes(){
             />
             <Stack.Screen
                 name="Banco"
-                component={Banco}
+                component={Dashboard}
                 options={{
                     headerShown: false
                 }}

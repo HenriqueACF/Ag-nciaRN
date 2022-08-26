@@ -9,14 +9,14 @@ import {
     CardFunction,
     CardFunctionRow,
     Touchable
-} from './Banco.styles'
+} from './Dashboard.styles'
 import {Header} from "../../components/Header/Header";
 import {MyCard} from '../../components/Card/MyCard'
 import {CardBlog} from "../../components/CardBlog/CardBlog";
 import {Text} from "react-native";
 import {Ionicons} from "@expo/vector-icons";
 
-export function Banco(){
+export function Dashboard(){
     return(
         <Container>
             <Header/>
