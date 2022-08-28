@@ -6,8 +6,7 @@ import {
     TouchableOpacity,
     Text,
     ImageBackground,
-    Alert,
-    Platform
+    Platform, Alert
 } from "react-native";
 import styles from './Login.styles'
 import {Ionicons} from "@expo/vector-icons";
@@ -15,27 +14,28 @@ import * as Animatable from 'react-native-animatable'
 //import UserService from "../../Services/UserService";
 
 export function Login({navigation}){
+    //HOOKs
+    const [user, setUser] = useState('')
+    const [password, setPassword] = useState('')
 
-    // const [user, setUser] = useState(null)
-    // const [password, setPassword] = useState(null)
-    //
-    // const entrar = () => {
-    //     let data = {
-    //         username: user,
-    //         password: password
-    //     }
-    //
-    //     UserService.login(data)
-    //         .then((response) => {
-    //             navigation.reset({
-    //                 index: 0,
-    //                 routes: [{name: "Dashboard"}]
-    //             })
-    //         })
-    //         .catch((error) => {
-    //             Alert.alert("Usuário não existe")
-    //         })
-    // }
+    const handleLogin = async () => {
+        const req = await fetch('https://api.b7web.com.br/loginsimples/', {
+            method:'POST',
+            body:JSON.stringify({
+                email: user,
+                password
+            }),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+        const json = await req.json()
+        if(json.status == 'ok'){
+            navigation.navigate('Banco')
+        }else{
+            alert('Login errado')
+        }
+    }
 
     return(
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS=='ios'?'padding':null} >
@@ -54,8 +54,9 @@ export function Login({navigation}){
             <View style={{flexDirection:'row', justifyContent:'space-around'}}>
             <TextInput
                 placeholder="CPF/CNPJ"
-                keyboardType='numeric'
                 style={styles.inputUser}
+                value={user}
+                onChangeText={t=>setUser(t)}
             />
             <Ionicons name='person' size={30} color='white'/>
             </View>
@@ -64,11 +65,14 @@ export function Login({navigation}){
                 placeholder="Senha"
                 secureTextEntry={true}
                 style={styles.inputPassword}
+                value={password}
+                onChangeText={t => setPassword(t)}
             />
             <Ionicons name='key' size={30} color='white'/>
             </View>
             <TouchableOpacity
-                onPress={()=> navigation.navigate('Banco')}
+                // onPress={()=> navigation.navigate('Banco')}
+                onPress={handleLogin}
                 style={styles.btnLogin}
             >
                 <Text style={styles.btnText}>Acessar</Text>
