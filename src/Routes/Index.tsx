@@ -33,7 +33,7 @@ export default function Routes(){
                 }}
             />
             <Stack.Screen
-                name="Banco"
+                name="Dashboard"
                 component={Dashboard}
                 options={{
                     headerShown: false

@@ -5,8 +5,7 @@ import {
     View,
     TouchableOpacity,
     Text,
-    ImageBackground,
-    Platform, Alert
+    ImageBackground, Alert
 } from "react-native";
 import styles from './Login.styles'
 import {Ionicons} from "@expo/vector-icons";
@@ -31,14 +30,17 @@ export function Login({navigation}){
         })
         const json = await req.json()
         if(json.status == 'ok'){
-            navigation.navigate('Banco')
+            navigation.navigate('Dashboard')
         }else{
-            alert('Login errado')
+            Alert.alert(
+                "⚠️  Erro 😱 ⚠️  ",
+                "Dados incorretos/Usuario não encontrado 👎 😔  🚧  🕵️‍♀️ 🕵️ Então quer dizer que você nao sabe seu login👮‍♀️ 👮 "
+            )
         }
     }
 
     return(
-    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS=='ios'?'padding':null} >
+    <KeyboardAvoidingView style={styles.container}>
         <ImageBackground
             source={require('../../../assets/bg-layout.png')}
             style={{width: '100%', height: '100%'}} >
