@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {KeyboardAvoidingView, ImageBackground, View, Text, TextInput, TouchableOpacity} from "react-native";
 import styles from './PagamentoCodigo.style'
 import {Ionicons} from "@expo/vector-icons";
 
 export function PagamentoCodigo({navigation}){
+
+    const [codigo, setCodigo] = useState('')
+
     return(
         <KeyboardAvoidingView style={styles.container}>
             <ImageBackground
@@ -18,6 +21,8 @@ export function PagamentoCodigo({navigation}){
                             placeholder="Código"
                             keyboardType='numeric'
                             style={styles.inputUser}
+                            value={codigo}
+                            onChangeText={t=>setCodigo(t)}
                         />
                         <TouchableOpacity>
                             <Text style={styles.txtPay}>Pagar</Text>

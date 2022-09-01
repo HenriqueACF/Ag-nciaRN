@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
     KeyboardAvoidingView,
     TextInput,
@@ -10,6 +10,16 @@ import {
 import styles from './RegistroCompl.style'
 
 export function RegistroCompl({navigation}){
+    //HOOKS
+    const [endereco, setEndereco] = useState('')
+    const [nResidencial, setNResidencial] = useState('')
+    const [cep, setCep] = useState('')
+    const [telefone, setTelefone] = useState('')
+    const [nascimento, setNascimento] = useState('')
+    const [senha, setSenha] = useState('')
+    const [confSenha, setConfSenha] = useState('')
+
+
     return(
         <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
             <ImageBackground
@@ -20,37 +30,51 @@ export function RegistroCompl({navigation}){
                     <TextInput
                         placeholder="Endereço residencial"
                         style={styles.inputUser}
+                        value={endereco}
+                        onChangeText={t=>setEndereco(t)}
                     />
                     <TextInput
                         placeholder="N°"
                         style={styles.inputUser}
                         keyboardType='numeric'
+                        value={nResidencial}
+                        onChangeText={t=>setNResidencial(t)}
 
                     />
                     <TextInput
                         placeholder="CEP"
                         keyboardType='numeric'
                         style={styles.inputUser}
+                        value={cep}
+                        onChangeText={t=>setCep(t)}
                     />
                     <TextInput
                         placeholder="Telefone"
                         keyboardType='numeric'
                         style={styles.inputUser}
+                        value={telefone}
+                        onChangeText={t=>setTelefone(t)}
                     />
                     <TextInput
                         placeholder="Data de Nascimento"
                         keyboardType='numeric'
                         style={styles.inputUser}
+                        value={nascimento}
+                        onChangeText={t=>setNascimento(t)}
                     />
                     <TextInput
                         placeholder="Senha"
                         keyboardType='numeric'
                         style={styles.inputUser}
+                        value={senha}
+                        onChangeText={t=>setSenha(t)}
                     />
                     <TextInput
                         placeholder="Repita sua senha"
                         keyboardType='numeric'
                         style={styles.inputUser}
+                        value={confSenha}
+                        onChangeText={t=>setConfSenha(t)}
                         />
                     <View style={styles.btnArea}>
                         <TouchableOpacity

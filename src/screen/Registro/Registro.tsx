@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
     KeyboardAvoidingView,
     TextInput,
@@ -10,6 +10,11 @@ import {
 import styles from './Registro.style'
 
 export function Registro({navigation}){
+    //HOOKS
+    const [name, setName] = useState('')
+    const [register, setRegister] = useState('')
+    const [email, setEmail] = useState('')
+
     return(
         <KeyboardAvoidingView style={[styles.container,styles.darkbg]}>
             <ImageBackground
@@ -20,16 +25,22 @@ export function Registro({navigation}){
                 <TextInput
                     placeholder="Nome completo"
                     style={styles.inputUser}
+                    value={name}
+                    onChangeText={t=>setName(t)}
                 />
                 <TextInput
                     placeholder="CPF/CNPJ"
                     keyboardType='numeric'
                     style={styles.inputUser}
+                    value={register}
+                    onChangeText={t=>setRegister(t)}
                 />
                 <TextInput
                     placeholder="Email"
                     keyboardType='email-address'
                     style={styles.inputUser}
+                    value={email}
+                    onChangeText={t=>setEmail(t)}
                 />
                 <View style={styles.btnArea}>
                     <TouchableOpacity
