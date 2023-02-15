@@ -18,7 +18,7 @@ export function Login({navigation}){
     const [password, setPassword] = useState('')
 
     const handleLogin = async () => {
-        const req = await fetch('https://api.b7web.com.br/loginsimples/', {
+        const req = await fetch('', {
             method:'POST',
             body:JSON.stringify({
                 email: user,
@@ -33,8 +33,8 @@ export function Login({navigation}){
             navigation.navigate('Dashboard')
         }else{
             Alert.alert(
-                "⚠️  Erro 😱 ⚠️  ",
-                "Dados incorretos/Usuario não encontrado 👎 😔  🚧  🕵️‍♀️ 🕵️ Então quer dizer que você nao sabe seu login👮‍♀️ 👮 "
+                "Erro⚠️",
+                "Dados incorretos/Usuario não encontrado."
             )
         }
     }
@@ -73,8 +73,8 @@ export function Login({navigation}){
             <Ionicons name='key' size={30} color='white'/>
             </View>
             <TouchableOpacity
-                // onPress={()=> navigation.navigate('Banco')}
-                onPress={handleLogin}
+                onPress={()=> navigation.navigate('Dashboard')}
+                //onPress={handleLogin}
                 style={styles.btnLogin}
             >
                 <Text style={styles.btnText}>Acessar</Text>
